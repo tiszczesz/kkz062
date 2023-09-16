@@ -5,3 +5,6 @@ fun main(){
         println("i = $i")
     }
 }
+fun test(){
+    val a = "test";
+}
