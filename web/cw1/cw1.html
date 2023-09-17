@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ćwiczenie 1</title>
     <style>
-        .green{
+        .green {
             background-color: green;
+        }
+        .under{
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
-    <h1>Ćwiczenie 1</h1>    
+    <h1>Ćwiczenie 1</h1>
     <div id="root">
         <p class="first">ffffff</p>
-        <p >fdg fdgdgdgdgdgd</p>
+        <p>fdg fdgdgdgdgdgd</p>
         <p id="last">Gggg ggggggggggg</p>
     </div>
     <script defer>
         const name = "Alojzy Tomaszek";
         //name = "dddd";
         document.querySelector("#root>p.first").innerHTML = name;
-        for(let i=0;i<10;i++){
+        for (let i = 0; i < 10; i++) {
             console.log(`i = ${i}`);
         }
         document.querySelector("#root").style.color = "red";
         document.querySelector("#last").className = "green";
+
+        alert("ggggg");
+        document.querySelector("#last").classList.add ("under");
         //console.log(`po za pętlą: i = ${i}`);
     </script>
 </body>
+
 </html>
