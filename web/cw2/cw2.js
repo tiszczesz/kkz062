@@ -5,6 +5,8 @@ const colors = [
 const root = document.querySelector("#root");
 console.log(root);
 generList(root,colors);
+generList(root,colors,"ol");
+//generList(root,colors,55);
 
 
 
@@ -16,6 +18,10 @@ function generList(elem,dane,rodzaj="ul"){
         const text = document.createTextNode(elem);
         li.appendChild(text);
         list.appendChild(li);
+        li.addEventListener("click", (event)=> {
+            event.target.style.color = event.target.style.color === "red" ? 
+           "black" : "red";
+        });
     }
     elem.appendChild(list);
 }
