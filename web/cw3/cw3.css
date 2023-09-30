@@ -1,0 +1,6 @@
+.first{
+    display: flex;
+}
+input[type=range]{
+    margin-right: 10px;
+}
