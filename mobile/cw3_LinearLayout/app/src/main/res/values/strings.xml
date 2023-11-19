@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">cw3_LinearLayout</string>
+    <string name="button_label">Button</string>
 </resources>
