@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         obrazek.setOnClickListener {
             counter++
             textInfo.setText("żyrafa jest kliknięta $counter razy")
+            Toast.makeText(this@MainActivity,"Hello from Toast!!",Toast.LENGTH_LONG)
+                .show()
         }
         btnReset.setOnClickListener {
             if(counter>0) {
