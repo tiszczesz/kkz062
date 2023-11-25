@@ -40,6 +40,20 @@ function FilmsToList(films) {
   }
   return html + '</ol>';
 }
+function FilmToTable(films){
+  let html = `<table class="table table-stripped"><tr>
+  <th>Tytuł</th><th>autor</th><th>cena</th><th>czas</th>
+  </tr>`;
+  for(const f of films){
+    html+=`<tr>
+      <td>${f.title}</td>
+      <td>${f.author}</td>
+      <td>${f.price}</td>
+      <td>${f.length}</td>
+    </tr>`
+  }
+  return html+ "</table>";
+}
 
 class Student {
   constructor(firstname, lastname, age) {
@@ -63,4 +77,4 @@ class Student {
 const s1 = new Student('Andrzej', 'Nowak', 23);
 document.querySelector('#root3').innerHTML = s1.info();
 document.querySelector('#root').innerHTML = Book1.info();
-document.querySelector('#root2').innerHTML = FilmsToList(films);
+document.querySelector('#root2').innerHTML = FilmToTable(films);
