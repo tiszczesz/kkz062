@@ -1,4 +1,4 @@
-const todos = [
+export const todos = [
   {
     "userId": 1,
     "id": 1,
@@ -120,7 +120,7 @@ const todos = [
     "completed": true
   }
 ];
-const users = [
+export const users = [
   {
     "id": 1,
     "name": "Leanne Graham",
