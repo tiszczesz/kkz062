@@ -27,18 +27,40 @@ function Film(title, author, price, length) {
   };
 }
 const films = [
-    new Film("Rybki 2","Grażyna Małecka",34.78,110),
-    new Film("Rybki 3","Grażyna Małecka",34.78,110),
-    new Film("saaaad","Grażyna Małecka",34.78,110),
-    new Film("rrrrrr2","Grażyna Małecka",34.78,110),
-    new Film("Rybki 2","Grażyna Małecka",34.78,110)
+  new Film('Rybki 2', 'Grażyna Małecka', 34.78, 110),
+  new Film('Rybki 3', 'Grażyna Małecka', 34.78, 110),
+  new Film('saaaad', 'Grażyna Małecka', 34.78, 110),
+  new Film('rrrrrr2', 'Grażyna Małecka', 34.78, 110),
+  new Film('Rybki 2', 'Grażyna Małecka', 34.78, 110),
 ];
-function FilmsToList(films){
-    let html = "<ol>";
-    for(const film of films){
-        html += `<li>${film}</li>`
-    }
-    return html+"</ol>";
+function FilmsToList(films) {
+  let html = `<ol class="list-group">`;
+  for (const film of films) {
+    html += `<li class="list-group-item">${film}</li>`;
+  }
+  return html + '</ol>';
 }
+
+class Student {
+  constructor(firstname, lastname, age) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.age = age;
+  }
+  // firstname;
+  // lastname;
+  // age;
+  info() {
+    return `
+        <div class="card" style="width: 18rem;">           
+            <div class="card-body"> 
+            <h5 class="card-title bg-light p-2">Informacje o studencie</h5>
+                ${this.firstname} ${this.lastname} wiek: ${this.age}
+            </div>        
+        </div>`;
+  }
+}
+const s1 = new Student('Andrzej', 'Nowak', 23);
+document.querySelector('#root3').innerHTML = s1.info();
 document.querySelector('#root').innerHTML = Book1.info();
 document.querySelector('#root2').innerHTML = FilmsToList(films);
