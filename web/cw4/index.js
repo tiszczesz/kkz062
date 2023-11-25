@@ -1,0 +1,44 @@
+const Book1 = {
+  //pola
+  title: 'ABC JavaScript',
+  price: 23.89,
+  realiseDate: new Date('2005-12-09'),
+  //metody
+  info: function () {
+    return `
+            <div>Tytuł: ${this.title}</div>
+            <div>cena: ${this.price} zł</div>
+            <div>data wydania: ${this.realiseDate.toLocaleDateString()} 
+                   </div>
+        `;
+  },
+};
+
+function Film(title, author, price, length) {
+  //fields
+  this.title = title;
+  this.author = author;
+  this.price = price;
+  this.length = length;
+  //methods
+  this.toString = function () {
+    return `${this.title} ${this.author} ${this.price} zł
+        ${this.length}`;
+  };
+}
+const films = [
+    new Film("Rybki 2","Grażyna Małecka",34.78,110),
+    new Film("Rybki 3","Grażyna Małecka",34.78,110),
+    new Film("saaaad","Grażyna Małecka",34.78,110),
+    new Film("rrrrrr2","Grażyna Małecka",34.78,110),
+    new Film("Rybki 2","Grażyna Małecka",34.78,110)
+];
+function FilmsToList(films){
+    let html = "<ol>";
+    for(const film of films){
+        html += `<li>${film}</li>`
+    }
+    return html+"</ol>";
+}
+document.querySelector('#root').innerHTML = Book1.info();
+document.querySelector('#root2').innerHTML = FilmsToList(films);
