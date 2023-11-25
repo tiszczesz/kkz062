@@ -12,6 +12,25 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        assertEquals(3, 2 + 1)
+    }
+    @Test
+    fun NWDRec_IsCorrect(){
+        val nwd:NWDCounter = NWDCounter();
+        val actual = nwd.GetRekNWD(10,8)
+        assertEquals(2,actual)
+    }
+    @Test
+    fun NWDRec_IsIncorrect(){
+        val nwd:NWDCounter = NWDCounter();
+        val actual = nwd.GetRekNWD(12,6)
+        val isCorrect = (actual!=6)
+        assertFalse(isCorrect)
+    }
+    @Test
+    fun NWDITER_IsCorrect(){
+        val nwd = NWDCounter();
+        val actual = nwd.GetIterNWD(120,18)
+        assertEquals(6,actual)
     }
 }

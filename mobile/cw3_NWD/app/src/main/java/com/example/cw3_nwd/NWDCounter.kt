@@ -19,6 +19,18 @@ class NWDCounter {
 //        this._b = b;
 //    }
     public fun GetRekNWD(a:Int,b:Int):Int {
-
+        if(b==0)return a;
+        return GetRekNWD(b,a%b);
+    }
+    public fun GetIterNWD(a:Int,b:Int):Int {
+        var aa = a;
+        var bb = b;
+        var temp = aa;
+        while(bb!=0){
+            temp = aa;
+            aa = bb;
+            bb = temp%bb;
+        }
+        return aa;
     }
 }
