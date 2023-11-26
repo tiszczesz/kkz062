@@ -7,14 +7,22 @@ addOptions(choices, choice);
 // })
 document.querySelector('#form_submit')?.addEventListener('submit', (e) => {
     e.preventDefault();
-    const firstname = document.querySelector('#firstname')?.value;
-    const lastname = document.querySelector('#lastname')?.value;
-    const education = document.querySelector('#choice')?.value;
+    const firstname = document.querySelector('#firstname')?.value.trim();
+    const lastname = document.querySelector('#lastname')?.value.trim();
+    const education = document.querySelector('#choice')
+        ?.value;
+    if (firstname == '' || lastname == '')
+        return;
     const person = new Person(firstname, lastname, education);
+    document.querySelector('#firstname').value = '';
+    document.querySelector('#lastname').value = '';
     persons.push(person);
     console.log(persons);
+    document.querySelector('#result').innerHTML =
+        UpdateTable(persons);
 });
-document.querySelector("#result").innerHTML = UpdateTable(persons);
+document.querySelector('#result').innerHTML =
+    UpdateTable(persons);
 function UpdateTable(persons) {
     let html = `<table class="table table-stripped">
     <tr>
