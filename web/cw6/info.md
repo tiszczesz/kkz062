@@ -18,3 +18,5 @@ plik.js
 npx tsc -init
 
 ```
+
+quokka -- rozszerzenie
