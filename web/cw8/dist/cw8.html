@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cw8.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex flex-row">
+            <div>
+                <form id="form_submit">
+                    <div class="row">
+                        <label for="firstname">Podaj imie</label>
+                        <input type="text" class="form-control" id="firstname" >
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Podaj nazwisko</label>
+                        <input type="text" class="form-control" id="lastname" >
+                    </div>
+                    <div class="form-group">
+                        <label for="choice">Wybierz opcje</label>
+                        <select name="choice" id="choice" class="form-control">
+                            
+                        </select>
+                    </div>
+                    <input type="submit" value="Zapisz" class="btn btn-dark w-100">
+                </form>
+            </div>
+            <div>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="cw8.js" defer></script>
+</body>
+
+</html>
