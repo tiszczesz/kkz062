@@ -12,6 +12,7 @@ export class Person {
         <td>${this.firstname}</td>
         <td>${this.lastname}</td>
         <td>${this.education}</td>
+        
         </tr>`;
     }
 }

@@ -40,6 +40,7 @@ function UpdateTable(persons: Person[]): string {
         <tr>
         <td>${lp}</td><td>${p.firstname}</td><td>${p.lastname}</td>
         <td>${p.education}</td>
+        <td><input type="button" value="X"/></td>
         </tr>
         `;
   }
