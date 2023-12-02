@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bind = ActivityMainBinding.inflate(layoutInflater);
         setContentView(bind.root)
+
         buttons = arrayListOf<Button>(
             bind.btn1,bind.btn2,bind.btn3,
             bind.btn4,bind.btn5,bind.btn6,
