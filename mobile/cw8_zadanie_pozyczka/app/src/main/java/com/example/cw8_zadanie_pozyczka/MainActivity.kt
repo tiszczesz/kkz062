@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                     val sum= bind.etSum.text.toString().toFloat()
                     val procent = bind.etProcent.text.toString().toFloat()
                     val month = p0?.progress ?: 0;
-                    val total = sum + (procent/12/100 )* month*sum
+                    val total = sum + (procent/12/100 )* month*sum//do poprawienia petla
                     bind.etResult.text = String.format("%.2f", total)
                 }catch (ex:NumberFormatException){
                     Toast.makeText(this@MainActivity,"Błędne dane",Toast.LENGTH_SHORT)
