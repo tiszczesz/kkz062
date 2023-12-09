@@ -1,13 +1,16 @@
+
 export class Person{
-    
+    id:string;
     firstname:string;
     lastname:string;
     education:string;
     constructor(firstname:string,lastname:string,education:string){
+        this.id = (Date.now()+Math.floor(Math.random()*100)).toString()
         this.firstname=firstname;
         this.lastname=lastname;
         this.education=education;
     }
+
     // toTableRow():string{
     //     return `<tr>
     //     <td>${this.firstname}</td>
