@@ -4,7 +4,7 @@ export class Person {
     lastname;
     education;
     constructor(firstname, lastname, education) {
-        this.id = (Date.now() + Math.floor(Math.random() * 100)).toString();
+        this.id = (Date.now() + Math.floor(Math.random() * 10000)).toString();
         this.firstname = firstname;
         this.lastname = lastname;
         this.education = education;
