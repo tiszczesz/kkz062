@@ -11,10 +11,7 @@ function App() {
       <table className="table table-striped">
         <thead>
           <tr>
-            <th>Lp</th>
-            <th>Imię</th>
-            <th>Nazwisko</th>
-            <th>Wiek</th>
+            <th>Lp</th><th>Imię</th><th>Nazwisko</th><th>Wiek</th>
             <th>Miejsce urodzenia</th>
           </tr>
         </thead>
