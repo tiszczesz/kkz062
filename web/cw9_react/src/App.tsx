@@ -4,6 +4,7 @@ import './App.css';
 import Message from './components/Message';
 import Wizytowka from './components/Wizytowka';
 import MyComponent from './components/MyComponent';
+import Select from './components/Select';
 
 function App() {
   console.log("renderowanie App...");
@@ -19,6 +20,7 @@ function App() {
      <Wizytowka firstname='Franciszek' lastname='Małecki' year={2007} />
      <MyComponent colors={colors} actualDate={new Date(2012,4,17)} />
      <MyComponent colors={colors} actualDate={new Date()} />
+    <Select options={colors}/>
     </>
   );
 }
