@@ -5,7 +5,7 @@ export class Person{
     lastname:string;
     education:string;
     constructor(firstname:string,lastname:string,education:string){
-        this.id = (Date.now()+Math.floor(Math.random()*100)).toString()
+        this.id = (Date.now()+Math.floor(Math.random()*10000)).toString()
         this.firstname=firstname;
         this.lastname=lastname;
         this.education=education;
