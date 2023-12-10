@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr" class="loaded"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Meta Information -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+
+    <title>MD to PDF | CloudConvert</title>
+    <meta name="description" content="&gt;MD to PDF Converter - CloudConvert is a free &amp; fast online file conversion service.">
+
+
+    <link rel="shortcut icon" href="https://cloudconvert.com/images/logo_flat_32.png">
+    <link rel="preconnect" href="https://api.cloudconvert.com/">
+
+    
+
+
+
+<!-- CSS -->
+    <link href="info_pliki/app.css" rel="stylesheet">
+
+
+    <script nonce="">
+        window.app = {
+            env: 'production',
+            url: 'https://cloudconvert.com',
+            apiUrl: 'https://api.cloudconvert.com',
+            liveUrl: 'https://cloudconvert.com',
+            sandboxUrl: 'https://sandbox.cloudconvert.com',
+            socketioUrl: 'https://socketio.cloudconvert.com',
+            routeName: 'tools.converter.from-to'
+        };
+    </script>
+
+
+
+
+            <script defer="defer" data-domain="cloudconvert.com" src="info_pliki/script.js" nonce=""></script>
+        <script nonce="">window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    
+    
+
+</head>
+
+
+
+    <body data-open="click" data-menu="horizontal-menu" class="horizontal-layout horizontal-menu menu-expanded fixed-navbar converter modal-open" data-modal-open-count="1">
+
+    <div id="app"><div><nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-dark bg-gradient-navbar" style="align-items: baseline; flex-flow: wrap;"><div class="navbar-wrapper container"><div class="navbar-header"><ul class="nav navbar-nav flex-row"><li class="nav-item mobile-menu d-md-none mr-auto"></li> <li class="nav-item"><a href="https://cloudconvert.com/" class="navbar-brand"><img alt="" width="51" height="32" src="info_pliki/logo_flat_110_borderless.png" class="brand-logo hidden-xs-down"> <h2 class="brand-text">cloud<strong>convert</strong></h2></a></li> <li class="nav-item d-md-none"><a data-toggle="collapse" data-target="#navbar-mobile" class="nav-link open-navbar-container collapse show" style=""><i class="fa fa-ellipsis-v"></i></a></li></ul></div> <div class="navbar-container content container"><div id="navbar-mobile" class="collapse navbar-collapse"><ul class="nav navbar-nav mr-auto float-left"><li class="dropdown nav-item mega-dropdown tools"><a href="https://cloudconvert.com/" data-toggle="dropdown" class="nav-link dropdown-toggle">Tools</a> <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar"><div class="container"><ul class="row w-100"><li class="col-lg-6 col-sm-12"><h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i> Convert Files</h6> <ul><li class="menu-list"><ul class="list-2-columns"><li><a href="https://cloudconvert.com/archive-converter" class="dropdown-item">Archive Converter</a></li> <li><a href="https://cloudconvert.com/audio-converter" class="dropdown-item">Audio Converter</a></li> <li><a href="https://cloudconvert.com/cad-converter" class="dropdown-item">CAD Converter</a></li> <li><a href="https://cloudconvert.com/document-converter" class="dropdown-item">Document Converter</a></li> <li><a href="https://cloudconvert.com/ebook-converter" class="dropdown-item">Ebook Converter</a></li> <li><a href="https://cloudconvert.com/font-converter" class="dropdown-item">Font Converter</a></li> <li><a href="https://cloudconvert.com/image-converter" class="dropdown-item">Image Converter</a></li> <li><a href="https://cloudconvert.com/presentation-converter" class="dropdown-item">Presentation Converter</a></li> <li><a href="https://cloudconvert.com/spreadsheet-converter" class="dropdown-item">Spreadsheet Converter</a></li> <li><a href="https://cloudconvert.com/vector-converter" class="dropdown-item">Vector Converter</a></li> <li><a href="https://cloudconvert.com/video-converter" class="dropdown-item">Video Converter</a></li></ul></li></ul></li> <li class="col-lg-3 col-sm-12"><h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i> Optimize Files</h6> <ul><li class="menu-list"><ul><li><a href="https://cloudconvert.com/compress-pdf" class="dropdown-item">Compress PDF</a></li> <li><a href="https://cloudconvert.com/compress-png" class="dropdown-item">Compress PNG</a></li> <li><a href="https://cloudconvert.com/compress-jpg" class="dropdown-item">Compress JPG</a></li></ul></li></ul> <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-file-archive"></i> Archives</h6> <ul><li class="menu-list"><ul><li><a href="https://cloudconvert.com/create-zip-archive" class="dropdown-item">Create Archive</a></li> <li><a href="https://cloudconvert.com/extract-zip-archive" class="dropdown-item">Extract Archive</a></li></ul></li></ul></li> <li class="col-lg-3 col-sm-12"><h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i> Capture Websites</h6> <ul><li class="menu-list"><ul><li><a href="https://cloudconvert.com/save-website-pdf" class="dropdown-item">Save Website as PDF</a></li> <li><a href="https://cloudconvert.com/website-png-screenshot" class="dropdown-item">Website PNG Screenshot</a></li> <li><a href="https://cloudconvert.com/website-jpg-screenshot" class="dropdown-item">Website JPG Screenshot</a></li></ul></li></ul> <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress-alt"></i> Merge Files</h6> <ul><li class="menu-list"><ul><li><a href="https://cloudconvert.com/merge-pdf" class="dropdown-item">Merge PDF</a></li></ul></li></ul></li></ul></div></div></li> <li class="dropdown nav-item mega-dropdown"><a href="https://cloudconvert.com/api/v2" data-toggle="dropdown" class="nav-link dropdown-toggle">API</a> <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar"><div class="container"><ul class="row w-100"><li class="col-lg-3 col-sm-12"><h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i>Convert Files</h6> <ul><li class="menu-list"><ul><li><a href="https://cloudconvert.com/apis/file-conversion" class="dropdown-item">File Conversion
+                                        API</a></li> <li><a href="https://cloudconvert.com/apis/office-to-pdf" class="dropdown-item">Office to PDF
+                                        API</a></li> <li><a href="https://cloudconvert.com/apis/iwork-to-pdf" class="dropdown-item">iWork to PDF
+                                        API</a></li> <li><a href="https://cloudconvert.com/apis/pdf-to-office" class="dropdown-item">PDF to Office
+                                        API</a></li></ul></li></ul></li> <li class="col-lg-3 col-sm-12"><h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i>Capture Websites</h6> <ul><li class="menu-list"><ul><li><a href="https://cloudconvert.com/apis/html-to-pdf" class="dropdown-item">HTML to PDF API</a></li> <li><a href="https://cloudconvert.com/apis/website-screenshot" class="dropdown-item">Website
+                                        Screenshot
+                                        API</a></li></ul></li></ul> <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i>Optimize Files</h6> <ul><li class="menu-list"><ul><li><a href="https://cloudconvert.com/apis/compress-pdf" class="dropdown-item">Compress PDF
+                                        API</a></li> <li><a href="https://cloudconvert.com/apis/compress-images" class="dropdown-item">Compress Images
+                                        API</a></li></ul></li></ul></li> <li class="col-lg-3 col-sm-12"><h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-cubes"></i>Other APIs</h6> <ul><li class="menu-list"><ul><li><a href="https://cloudconvert.com/apis/merge-pdf" class="dropdown-item">Merge PDF API</a></li> <li><a href="https://cloudconvert.com/apis/thumbnails" class="dropdown-item">Thumbnail API</a></li> <li><a href="https://cloudconvert.com/apis/watermark" class="dropdown-item">Watermark API</a></li></ul></li></ul> <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-robot"></i>Automate</h6> <ul><li class="menu-list"><ul><li><a href="https://cloudconvert.com/integrations" class="dropdown-item">Integrations</a></li></ul></li></ul></li> <li class="col-lg-3 col-sm-12"><h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-book"></i> Documentation</h6> <ul><li class="menu-list"><ul><li><a href="https://cloudconvert.com/api/v2" class="dropdown-item">API
+                                        Documentation</a></li> <li><a href="https://cloudconvert.com/api/v2/quickstart" class="dropdown-item">Quickstart
+                                        Guide</a></li> <li><a href="https://cloudconvert.com/api/v2/jobs/builder" class="dropdown-item">Job Builder</a></li></ul></li></ul></li></ul></div></div></li> <li class="nav-item"><a href="https://cloudconvert.com/pricing" class="nav-link">Pricing</a></li></ul> <ul class="nav navbar-nav float-right"><li class="nav-item"><a href="https://cloudconvert.com/register" class="nav-link">Sign Up</a></li> <li class="nav-item"><a href="https://cloudconvert.com/login" class="nav-link">Login</a></li></ul></div></div></div></nav> <div class="bg-gradient-navbar converter-header"><div class="container"><div class="row align-items-center"><div class="col-md-6 intro"><h1>MD to PDF Converter</h1> <p>
+                                    CloudConvert is an online document 
+converter. Amongst many others, we support PDF, DOCX, PPTX, XLSX. Thanks
+ to our advanced conversion technology the quality of the output will be
+ as good as if the file was saved through the latest Microsoft Office 
+2021 suite.
+                                </p></div> <div class="col-md-6 selector mt-1 mt-md-0 height-75"><h2><span>convert</span> <div class="dropdown b-dropdown format-dropdown btn-group" id="__BVID__32"><!----><button aria-haspopup="menu" aria-expanded="false" type="button" class="btn dropdown-toggle btn-outline-secondary btn-lg" id="__BVID__32__BV_toggle_">MD</button><ul role="menu" tabindex="-1" class="dropdown-menu format-dropdown-menu" aria-labelledby="__BVID__32__BV_toggle_"><!----></ul></div> <span>to</span> <div class="dropdown b-dropdown format-dropdown btn-group" id="__BVID__34"><!----><button aria-haspopup="menu" aria-expanded="false" type="button" class="btn dropdown-toggle btn-outline-secondary btn-lg" id="__BVID__34__BV_toggle_">PDF</button><ul role="menu" tabindex="-1" class="dropdown-menu format-dropdown-menu" aria-labelledby="__BVID__34__BV_toggle_"><!----></ul></div></h2></div></div></div></div> <div class="app-content content center-layout"><div class="content-wrapper container"><div><!----> <!----> <!----> <!----> <!----> </div> <!----> <span></span> <span><div class="card file mb-1"><div class="card-content"><div class="d-flex flex-column flex-md-row"><div class="align-self-center p-1 width-40-per w-sm-down-100"><a href="" class="d-md-none float-right"><i class="fa fa-times"></i></a> <div><ul class="list-unstyled mb-0"><li class="text-truncate"><i class="fa fa-fw fa-file mr-1"></i> <span>info(1).md</span></li></ul></div></div> <div class="align-self-center pl-1 pr-1 width-25-per w-sm-down-100 text-nowrap"><span class="align-middle"><i class="fa fa-fw fa-sync-alt mr-1"></i>
+
+                      Convert to
+
+                      <span>PDF</span></span> <!----></div> <div class="align-self-center p-1 flex-grow-1"><span><span class="badge text-uppercase badge-success">
+        finished
+    </span> <!----> <!----></span></div> <!----> <div class="align-self-center w-sm-down-100 pl-1 pr-1 text-nowrap flex-shrink-1"><div class="btn-group mb-1 mb-md-0 mr-md-1 w-sm-down-100"><!----> <a href="https://eu-central.storage.cloudconvert.com/tasks/d776b328-e832-42c1-b313-ae8740e2ed3c/info%281%29.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=cloudconvert-production%2F20231210%2Ffra%2Fs3%2Faws4_request&amp;X-Amz-Date=20231210T070255Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=f2e5a9de8d6c441e5e1a8304fcc2076784ba95111ac59f433c31d8e11dd1de87&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=attachment%3B%20filename%3D%22info%281%29.pdf%22&amp;response-content-type=application%2Fpdf&amp;x-id=GetObject" download="" title="info(1).pdf (27 KB)" class="btn btn-success w-sm-down-100"><i class="fa fa-cloud-download mr-1"></i> Download</a> <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-success dropdown-toggle dropdown-toggle-split"><span class="sr-only">Toggle Dropdown</span></button> <div class="dropdown-menu dropdown-menu-right"><a href="" class="dropdown-item"><i class="fa fa-eye fa-fw mr-1"></i>
+            Preview
+        </a> <a href="" class="dropdown-item"><i class="fa fa-redo fa-fw mr-1"></i>
+            Retry
+        </a> <!----></div></div> <a href="" title="Delete" class="d-none d-md-inline-block"><i class="fa fa-times"></i></a></div></div></div></div></span> <div style="display: none;"><div class="d-flex mb-2 justify-content-center"><div class="btn-group dropdown"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-file-plus mr-1"></i>
+        Select File
+    </button> <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle dropdown-toggle-split btn-primary btn-lg"><span class="sr-only">Toggle Dropdown</span></button> <div class="dropdown-menu dropdown-menu-right"><a href="" class="dropdown-item"><i class="fa fa-folder-open fa-fw mr-1"></i>From my
+            Computer
+        </a> <span><a href="" class="dropdown-item"><i class="fa fa-link fa-fw mr-1"></i>By URL
+                </a> <!----> <!----></span> <a href="" class="dropdown-item"><i class="fab fa-google-drive fa-fw mr-1"></i>From Google Drive
+            </a> <a href="" class="dropdown-item"><i class="fab fa-dropbox fa-fw mr-1"></i>From Dropbox
+            </a> <a href="" class="dropdown-item"><i class="fab fa-microsoft fa-fw mr-1"></i>From OneDrive
+            </a></div> <input type="file" multiple="multiple" class="d-none"></div></div></div> <!----> <div class="d-flex flex-column flex-md-row mt-2 mb-2"><div class="align-self-center flex-shrink-1 w-sm-down-100 pb-1 pb-md-0 pr-md-1"><div class="btn-group btn-block dropdown"><button type="button" class="btn btn-block btn-secondary"><i class="fa fa-file-plus mr-1"></i>
+        Add more Files
+    </button> <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle dropdown-toggle-split btn-secondary"><span class="sr-only">Toggle Dropdown</span></button> <div class="dropdown-menu dropdown-menu-right"><a href="" class="dropdown-item"><i class="fa fa-folder-open fa-fw mr-1"></i>From my
+            Computer
+        </a> <span><a href="" class="dropdown-item"><i class="fa fa-link fa-fw mr-1"></i>By URL
+                </a> <!----> <!----></span> <a href="" class="dropdown-item"><i class="fab fa-google-drive fa-fw mr-1"></i>From Google Drive
+            </a> <a href="" class="dropdown-item"><i class="fab fa-dropbox fa-fw mr-1"></i>From Dropbox
+            </a> <a href="" class="dropdown-item"><i class="fab fa-microsoft fa-fw mr-1"></i>From OneDrive
+            </a></div> <input type="file" multiple="multiple" class="d-none"></div></div> <div class="flex-grow-1"></div> <!----> <div class="align-self-center flex-shrink-1 w-sm-down-100 pb-1 pb-md-0 pl-md-1"><!----></div></div> <div style="display: none;"><section id="content"><div class="row"><div class="col-md-6 col-sm-12"><div class="card h-100 mb-0"><div class="card-body"><a href="https://cloudconvert.com/md-converter" class="float-right">
+
+
+                        MD Converter
+                    </a> <h4 class="card-title"><i class="fa fa-file mr-1"></i>
+
+
+                        MD
+
+
+                    </h4> <p>Markdown files are text plain text files 
+which can contain text inline symbols for formating the text (e.g. 
+titles, bold, tables). MD files are also often used by version control 
+systems like GitHub (e.g. README.md). </p></div></div></div> <div class="col-md-6 col-sm-12"><div class="card h-100 mb-0"><div class="card-body"><a href="https://cloudconvert.com/pdf-converter" class="float-right">
+
+
+                        PDF Converter
+                    </a> <h4 class="card-title"><i class="fa fa-file mr-1"></i>
+
+
+                        PDF
+
+
+                    </h4> <p>PDF is a document file format that contains
+ text, images, data etc. This document type is Operating System 
+independent. It is an open standard that compresses a document and 
+vector graphics. It can be viewed in web browsers if the PDF plug-in is 
+installed on the browser.  </p></div></div></div></div> <div class="row"><div class="col-sm row my-2"><div class="col-4 align-self-center text-center font-large-4"><i class="fa fa-copy"></i></div> <div class="col-8"><h3>+200 Formats Supported</h3> <p class="mb-0">
+                CloudConvert is your universal app for file conversions. We support nearly all audio, video,
+                document, ebook, archive, image, spreadsheet, and presentation formats. Plus, you can use our online
+                tool without downloading any software.
+            </p></div></div> <div class="col-sm row my-2"><div class="col-4 align-self-center text-center font-large-4"><i class="fa fa-shield-check"></i></div> <div class="col-8"><h3>Data Security</h3> <p class="mb-0">
+                CloudConvert has been trusted by our users and customers since its founding in 2012. No one except you
+                will ever have access to your files. We earn money by selling access to our API, not by selling your
+                data. Read more about that in our <a href="https://cloudconvert.com/privacy">Privacy Policy</a>.
+            </p></div></div></div> <div class="row"><div class="col-sm row my-2"><div class="col-4 align-self-center text-center font-large-4"><i class="fa fa-cogs"></i></div> <div class="col-8"><h3>High-Quality Conversions</h3> <p class="mb-0">
+                Besides using open source software under the hood, we’ve partnered with various software vendors to
+                provide the best possible results. Most conversion types can be adjusted to your needs such as setting
+                the quality and many other options.
+            </p></div></div> <div class="col-sm row my-2"><div class="col-4 align-self-center text-center font-large-4"><i class="fa fa-cubes"></i></div> <div class="col-8"><h3>Powerful API</h3> <p class="mb-0">
+                Our API allows custom integrations with your app. You pay only for what you actually use, and there are
+                huge discounts for high-volume customers. We provide a lot of handy features such as full Amazon S3
+                integration. Check out the <a href="https://cloudconvert.com/apis/file-conversion">CloudConvert API</a>.
+            </p></div></div></div></section></div></div></div> <div class="container"><footer class="footer mb-0"><div><div class="row"><div class="col-md align-self-center"><div class="row"><div class="col-6 col-md-auto mr-md-3 mt-1"><h6 class="text-bold-600">Company</h6> <ul class="list-unstyled mb-0"><li><a href="https://cloudconvert.com/about">About Us</a></li> <li><a href="https://cloudconvert.com/security">Security</a></li></ul></div> <div class="col-6 col-md-auto mr-md-3 mt-1"><h6 class="text-bold-600">Resources</h6> <ul class="list-unstyled mb-0"><li><a href="https://cloudconvert.com/blog">Blog</a></li> <li><a href="https://status.cloudconvert.com/" target="_blank" rel="noopener">Status</a></li></ul></div> <div class="col-6 col-md-auto mr-md-3 mt-1"><h6 class="text-bold-600">Legal</h6> <ul class="list-unstyled mb-0"><li><a href="https://cloudconvert.com/privacy">Privacy</a></li> <li><a href="https://cloudconvert.com/terms">Terms</a></li> <li><a href="https://cloudconvert.com/about#imprint">Imprint</a></li></ul></div> <div class="col-6 col-md-auto mr-md-3 mt-1"><h6 class="text-bold-600">Contact</h6> <ul class="list-unstyled mb-0"><li><a href="https://cloudconvert.com/contact">Contact Us</a></li></ul></div></div></div> <div class="col-md-auto text-center text-md-right mt-2 mt-md-2"><p>
+                        © 2023 Lunaweb GmbH <br><span class="text-muted d-none d-lg-inline d-xl-inline d-md-inline mt-1">Made in Munich, Germany  </span></p></div></div></div> <p class="text-center text-muted font-medium-4 my-3">
+  We've already converted
+  <strong><span data-v-0abbdf5a="">1,775,869,107</span>
+    files
+  </strong>
+  with a total size of
+  <strong><span data-v-0abbdf5a="">13,814</span>
+    TB</strong>.
+</p></footer></div></div></div>
+
+    
+
+
+    
+            <script src="info_pliki/app.js"></script>
+    
+
+
+
+
+
+
+
+
+<div style="position: absolute; z-index: 1040;" id="__BVID__54___BV_modal_outer_"><div role="dialog" class="modal fade show" style="display: block;" id="__BVID__54" aria-modal="true" aria-labelledby="__BVID__54___BV_modal_title_" aria-describedby="__BVID__54___BV_modal_body_"><div class="modal-dialog modal-xl modal-dialog-centered"><span tabindex="0"></span><div tabindex="-1" class="modal-content align-self-stretch" id="__BVID__54___BV_modal_content_"><header class="modal-header" id="__BVID__54___BV_modal_header_"><h5 class="modal-title" id="__BVID__54___BV_modal_title_">info(1).pdf</h5><button type="button" aria-label="Close" class="close">×</button></header><div class="modal-body p-0 text-center" id="__BVID__54___BV_modal_body_"><iframe src="info_pliki/info(1).pdf" allowfullscreen="allowfullscreen" class="w-100 h-100 border-0"></iframe></div><footer class="modal-footer" id="__BVID__54___BV_modal_footer_"><button class="btn btn-secondary">
+            Close
+        </button> <a href="https://eu-central.storage.cloudconvert.com/tasks/d776b328-e832-42c1-b313-ae8740e2ed3c/info%281%29.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=cloudconvert-production%2F20231210%2Ffra%2Fs3%2Faws4_request&amp;X-Amz-Date=20231210T070255Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=f2e5a9de8d6c441e5e1a8304fcc2076784ba95111ac59f433c31d8e11dd1de87&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=attachment%3B%20filename%3D%22info%281%29.pdf%22&amp;response-content-type=application%2Fpdf&amp;x-id=GetObject" download="" class="btn btn-success mr-1"><i class="fa fa-cloud-download mr-1"></i> Download
+        </a></footer></div><span tabindex="0"></span></div></div><div id="__BVID__54___BV_modal_backdrop_" class="modal-backdrop"></div></div></body></html>
