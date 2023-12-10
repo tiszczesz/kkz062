@@ -1,0 +1,12 @@
+.select-container{
+    display: flex;
+}
+.elem{
+    width: 40%;
+    margin: 20px;
+}
+div.elem>div{
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+}
