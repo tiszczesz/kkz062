@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 type Props = {};
 
 const SelectLight = (props: Props) => {
+  console.log("Renderowanie SelectLight");
+  
     const [selected,setSelected] = useState("");
   return (
     <>

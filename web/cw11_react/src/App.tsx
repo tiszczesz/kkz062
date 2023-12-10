@@ -10,7 +10,7 @@ function App() {
     <div >
       <Counter />
       <SelectLight />
-      <Select values={["red","green","blue","yellow"]} info='Kolory'/>
+      <Select values={["red","green","blue","yellow","purple"]} info='Kolory'/>
     </div>
   );
 }
