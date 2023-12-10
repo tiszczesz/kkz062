@@ -1,0 +1,8 @@
+.counter-info{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    min-width: 50px;
+    border: solid 1px brown;
+}
