@@ -3,26 +3,26 @@ package com.example.cw10_todos
 class Todo(content: String, pririty: Pririty) {
     private var content: String;
     private var pririty: Pririty;
-
-    init {
-        this.content = content;
-        this.pririty = pririty;
-    }
-
-    public var Content: String
+    var Content: String
         get() {
             return content
         }
         set(value) {
             content = value.toString().trim()
         }
-    public var MyPririty: Pririty
+    var MyPririty: Pririty
         get() {
             return pririty;
         }
         set(value) {
             pririty = value;
         }
+    init {
+        this.content = content;
+        this.pririty = pririty;
+    }
+
+
     public override fun toString(): String {
         return "$Content ważność: $MyPririty";
     }
