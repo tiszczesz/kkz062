@@ -33,7 +33,9 @@ class MainActivity : AppCompatActivity() {
         bind.spPriritety.adapter = adapterSpiner;
         val listAdapter = ArrayAdapter<Todo>(
             this,
-            android.R.layout.simple_list_item_1, todos
+           // R.layout.my_layout,
+            android.R.layout.simple_list_item_1,
+            todos
         )
         bind.lvTodos.adapter = listAdapter;
         bind.btnAddTodo.setOnClickListener {
@@ -63,11 +65,14 @@ class MainActivity : AppCompatActivity() {
         }
         bind.lvTodos.setOnItemLongClickListener { adapterView, view, position, id ->
             bind.etAddTodo.setText(todos[id.toInt()].Content)
+           // bind.lvTodos.setSelector(androidx.appcompat.R.color.background_material_dark)
             bind.spPriritety.setSelection(
                 adapterSpiner
                     .getPosition(todos[id.toInt()].MyPririty)
             )
             bind.btnAddTodo.text = "Zmień"
+            bind.lvTodos.divider = getDrawable(R.color.black)
+
             //isInsert = false;
             selectedId = id.toInt();
             return@setOnItemLongClickListener true

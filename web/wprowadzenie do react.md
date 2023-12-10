@@ -6,7 +6,7 @@
 npx create-react-app nazwa-aplikacji --template typescript
 
 // lub projektu w JavaScript
-npx create-react-app nazwa-aplikacji --template typescript
+npx create-react-app nazwa-aplikacji 
 
 //jeśli jest potrzeba wcześniejszego zainstalowania to:
 npm install -g create-react-app //globalnie
