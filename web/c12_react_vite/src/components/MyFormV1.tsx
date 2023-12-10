@@ -6,7 +6,9 @@ const MyFormV1 = () => {
       <h1>Dane osobowe</h1>
       <form>
         <div className="row">
-          <label htmlFor=""></label>
+          <label className="col-3">
+            Podaj imię:
+          </label>
         </div>
       </form>
     </div>
