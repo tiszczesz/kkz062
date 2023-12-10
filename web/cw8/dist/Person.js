@@ -1,19 +1,13 @@
 export class Person {
+    id;
     firstname;
     lastname;
     education;
     constructor(firstname, lastname, education) {
+        this.id = (Date.now() + Math.floor(Math.random() * 10000)).toString();
         this.firstname = firstname;
         this.lastname = lastname;
         this.education = education;
-    }
-    toTableRow() {
-        return `<tr>
-        <td>${this.firstname}</td>
-        <td>${this.lastname}</td>
-        <td>${this.education}</td>
-        
-        </tr>`;
     }
 }
 export const persons = [

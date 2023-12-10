@@ -1,5 +1,7 @@
 import { choices } from './dane.js';
 import { Person, persons } from './Person.js';
+console.log(persons);
+let actualPersons = persons;
 const choice = document.querySelector('#choice');
 addOptions(choices, choice);
 // document.querySelector("#submit")?.addEventListener("click",()=>{
@@ -21,13 +23,36 @@ document.querySelector('#form_submit')?.addEventListener('submit', (e) => {
   (document.querySelector('#firstname') as HTMLInputElement).value = '';
   (document.querySelector('#lastname') as HTMLInputElement).value = '';
 
-  persons.push(person);
-  console.log(persons);
-  (document.querySelector('#result') as HTMLDivElement).innerHTML =
-    UpdateTable(persons);
+  actualPersons.push(person);
+  UpdateAndSetClick()
 });
-(document.querySelector('#result') as HTMLDivElement).innerHTML =
-  UpdateTable(persons);
+UpdateAndSetClick()
+function UpdateAndSetClick(){
+  (document.querySelector('#result') as HTMLDivElement).innerHTML =
+  UpdateTable(actualPersons);
+  addClickListener();
+}
+
+
+function addClickListener() {
+  const buttons = document.querySelectorAll('td>input[type=button]');
+  //console.log(buttons);
+
+  for (const button of buttons) {
+    button.addEventListener('click', (event) => {
+      const id = (event.target as HTMLInputElement).id;
+      console.log(id);      
+      actualPersons = actualPersons.filter((p, i) => {
+        return p.id !== id;
+      });
+      console.log(actualPersons);   
+      //debugger;   
+      UpdateAndSetClick();
+        
+    });
+  }
+}
+
 function UpdateTable(persons: Person[]): string {
   let html = `<table class="table table-stripped">
     <tr>
@@ -40,7 +65,7 @@ function UpdateTable(persons: Person[]): string {
         <tr>
         <td>${lp}</td><td>${p.firstname}</td><td>${p.lastname}</td>
         <td>${p.education}</td>
-        <td><input type="button" value="X"/></td>
+        <td><input id="${p.id}" type="button" value="X"/></td>
         </tr>
         `;
   }
