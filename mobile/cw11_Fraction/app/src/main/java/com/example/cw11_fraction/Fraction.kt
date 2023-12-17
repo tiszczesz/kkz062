@@ -1,5 +1,7 @@
 package com.example.cw11_fraction
 
+import kotlin.math.abs
+
 class Fraction(private var _numerator:Int,private var _denumerator:Int) {
 
      var numerator :Int
@@ -19,7 +21,7 @@ class Fraction(private var _numerator:Int,private var _denumerator:Int) {
         denumerator = _denumerator;
     }
     fun getNwd(num:Int,denum:Int):Int {
-        if(denum==0) return num;
+        if(denum==0) return abs(num);
         return getNwd(denum,num%denum)
     }
     fun getCommon(frac:Fraction):Int{
