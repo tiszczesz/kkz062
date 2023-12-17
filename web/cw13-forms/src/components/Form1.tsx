@@ -1,18 +1,23 @@
-import React, { FormEvent, useRef, useState } from 'react';
+import React, { FormEvent, useEffect, useRef, useState } from 'react';
 import { genres, IFilm } from '../models/data';
+import Result from './Result';
 type Props = {};
 
 const Form1 = (props: Props) => {
-//   const [film, setFilm] = useState({});
+  //   const [film, setFilm] = useState({});
   const titleRef = useRef<HTMLInputElement>(null);
   const directorRef = useRef<HTMLInputElement>(null);
   const lengthRef = useRef<HTMLInputElement>(null);
   const dateRef = useRef<HTMLInputElement>(null);
   const genreRef = useRef<HTMLSelectElement>(null);
+  let film = null;
+
+
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     //setFilm({})
+   
     if (
       titleRef.current !== null &&
       directorRef.current !== null &&
@@ -20,15 +25,15 @@ const Form1 = (props: Props) => {
       dateRef.current !== null &&
       genreRef.current !== null
     ) {
-    //   setFilm((prev) => ({
-    //     ...prev,
-    //     title: titleRef.current?.value,
-    //     director: directorRef.current?.value,
-    //     length: parseInt(lengthRef.current!.value),
-    //     createDate: new Date(dateRef.current!.value),
-    //     genre: genreRef.current?.value,
-    //   }));
-      const film = {
+      //   setFilm((prev) => ({
+      //     ...prev,
+      //     title: titleRef.current?.value,
+      //     director: directorRef.current?.value,
+      //     length: parseInt(lengthRef.current!.value),
+      //     createDate: new Date(dateRef.current!.value),
+      //     genre: genreRef.current?.value,
+      //   }));
+      film = {
         title: titleRef.current?.value,
         director: directorRef.current?.value,
         length: parseInt(lengthRef.current!.value),
@@ -36,7 +41,6 @@ const Form1 = (props: Props) => {
         genre: genreRef.current?.value,
       };
       console.log(film);
-      
     }
   };
 
@@ -117,9 +121,7 @@ const Form1 = (props: Props) => {
           />
         </div>
       </form>
-      <div>
-       
-      </div>
+      <Result film={film} />
     </>
   );
 };
