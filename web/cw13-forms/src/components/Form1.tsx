@@ -1,17 +1,43 @@
-import React, { FormEvent, useRef } from 'react';
+import React, { FormEvent, useRef, useState } from 'react';
 import { genres, IFilm } from '../models/data';
 type Props = {};
 
 const Form1 = (props: Props) => {
-  // const Film:IFilm = {}
+//   const [film, setFilm] = useState({});
   const titleRef = useRef<HTMLInputElement>(null);
   const directorRef = useRef<HTMLInputElement>(null);
   const lengthRef = useRef<HTMLInputElement>(null);
   const dateRef = useRef<HTMLInputElement>(null);
-  const genreRef = useRef<HTMLSelectElement>(null)
+  const genreRef = useRef<HTMLSelectElement>(null);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
-    throw new Error('Function not implemented.');
+    event.preventDefault();
+    //setFilm({})
+    if (
+      titleRef.current !== null &&
+      directorRef.current !== null &&
+      lengthRef.current !== null &&
+      dateRef.current !== null &&
+      genreRef.current !== null
+    ) {
+    //   setFilm((prev) => ({
+    //     ...prev,
+    //     title: titleRef.current?.value,
+    //     director: directorRef.current?.value,
+    //     length: parseInt(lengthRef.current!.value),
+    //     createDate: new Date(dateRef.current!.value),
+    //     genre: genreRef.current?.value,
+    //   }));
+      const film = {
+        title: titleRef.current?.value,
+        director: directorRef.current?.value,
+        length: parseInt(lengthRef.current!.value),
+        createDate: new Date(dateRef.current!.value),
+        genre: genreRef.current?.value,
+      };
+      console.log(film);
+      
+    }
   };
 
   return (
@@ -43,12 +69,16 @@ const Form1 = (props: Props) => {
           />
         </div>
         <div className="row m-2">
-          <label className="col-3 text-end" htmlFor="genre">Wybierz gatunek</label>
-          <select ref={genreRef} className='col-6' name="genre" id="genre">
-            {genres.map((elem,key)=>{
-                return (
-                    <option key={key} value={elem}>{elem}</option>
-                )
+          <label className="col-3 text-end" htmlFor="genre">
+            Wybierz gatunek
+          </label>
+          <select ref={genreRef} className="col-6" name="genre" id="genre">
+            {genres.map((elem, key) => {
+              return (
+                <option key={key} value={elem}>
+                  {elem}
+                </option>
+              );
             })}
           </select>
         </div>
@@ -76,6 +106,7 @@ const Form1 = (props: Props) => {
             type="date"
             name="createDate"
             id="createDate"
+            defaultValue={new Date().toISOString().substring(0, 10)}
           />
         </div>
         <div className="row m-2">
@@ -86,6 +117,9 @@ const Form1 = (props: Props) => {
           />
         </div>
       </form>
+      <div>
+       
+      </div>
     </>
   );
 };
