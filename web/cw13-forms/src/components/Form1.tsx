@@ -1,6 +1,6 @@
-import React, { FormEvent, useEffect, useRef, useState } from 'react';
-import { genres, IFilm } from '../models/data';
-import Result from './Result';
+import React, { FormEvent, useEffect, useRef, useState } from "react";
+import { genres, IFilm } from "../models/data";
+
 type Props = {};
 
 const Form1 = (props: Props) => {
@@ -10,14 +10,13 @@ const Form1 = (props: Props) => {
   const lengthRef = useRef<HTMLInputElement>(null);
   const dateRef = useRef<HTMLInputElement>(null);
   const genreRef = useRef<HTMLSelectElement>(null);
+  const resultRef = useRef<HTMLDivElement>(null);
   let film = null;
-
-
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     //setFilm({})
-   
+
     if (
       titleRef.current !== null &&
       directorRef.current !== null &&
@@ -41,6 +40,23 @@ const Form1 = (props: Props) => {
         genre: genreRef.current?.value,
       };
       console.log(film);
+      if (resultRef.current !== null) {
+        resultRef.current.innerHTML = `
+          <div class='card bg-light'>
+          <div class='card-body'>
+           <div class='card-title bg-warning p-2'>
+            <h3 > Tytuł filmu: ${film.title}</h3>
+            <h4 > Reżyser filmu: ${film.director}</h3>
+            </div>
+            <div class='card-text'>
+            Czas trwania: ${film.length} minut<br>
+            Data realizacji: ${film.createDate.toLocaleDateString()}<br>
+            Rodzaj filmu: ${film.genre}
+            </div>
+            </div>
+          </div>
+        `;
+      }
     }
   };
 
@@ -121,7 +137,7 @@ const Form1 = (props: Props) => {
           />
         </div>
       </form>
-      <Result film={film} />
+      <div ref={resultRef}></div>
     </>
   );
 };
