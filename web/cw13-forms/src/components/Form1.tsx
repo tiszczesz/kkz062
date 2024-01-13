@@ -1,5 +1,5 @@
-import React, { FormEvent, useEffect, useRef, useState } from "react";
-import { genres, IFilm } from "../models/data";
+import React, { FormEvent, useRef } from "react";
+import { genres,IFilm } from "../models/data";
 
 type Props = {};
 
