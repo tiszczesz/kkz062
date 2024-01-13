@@ -23,3 +23,33 @@ plik.js
 npx tsc -init
 
 ```
+
+
+### użycie useRef i formularza:
+
+```js
+import React, { useRef } from 'react';
+
+function Form() {
+  const inputRef = useRef(null);
+  const resultRef = useRef(null);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const inputValue = inputRef.current.value;
+    resultRef.current.innerHTML = `Wynik: $\{inputValue}`;
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Wprowadź wartość:
+        <input type="text" ref={inputRef} />
+      </label>
+      <button type="submit">Wyślij</button>
+      <div ref={resultRef}></div>
+    </form>
+  );
+}
+
+```
