@@ -20,8 +20,9 @@ class MainActivity : AppCompatActivity() {
             // R.layout.spinner_item,
             actions
         )
-        val actionSpiner = findViewById<Spinner>(R.id.spChoice);
-        actionSpiner.adapter = adapter;
+        val spinner = findViewById<Spinner>(R.id.spChoice)
+
+        spinner.adapter = adapter;
 
         val runButton = findViewById<Button>(R.id.btnCount);
         val numA = findViewById<EditText>(R.id.etNumA)
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         val denumA = findViewById<EditText>(R.id.etDenumA)
         val denumB = findViewById<EditText>(R.id.etDenumB)
         val resultNum = findViewById<TextView>(R.id.tvNumResult)
-        val spinner = findViewById<Spinner>(R.id.spChoice)
+
         val resultDenum = findViewById<TextView>(R.id.tvDenumResult)
         runButton.setOnClickListener {
             try {
