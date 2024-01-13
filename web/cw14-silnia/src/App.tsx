@@ -4,12 +4,14 @@ import './App.css';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import SilniaForm from './components/SilniaForm';
 import Silnia2Form from './components/Silnia2Form';
+import ExerciseForm from './components/ExerciseForm';
 
 function App() {
   return (
    <>
    {/* <SilniaForm /> */}
-   <Silnia2Form />
+   {/* <Silnia2Form /> */}
+    <ExerciseForm />
    </>
   );
 }

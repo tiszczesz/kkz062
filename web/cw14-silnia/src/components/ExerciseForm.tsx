@@ -4,7 +4,13 @@ export default function ExerciseForm() {
     const refInput = useRef<HTMLInputElement>(null)
     const [result,setResult] = useState("")
     function handleSubmit(event: FormEvent<HTMLFormElement>): void {
-        throw new Error("Function not implemented.")
+        event.preventDefault();
+        if(refInput.current!==null){
+            const info = refInput.current.value;
+           // setResult((prev)=>info)
+           setResult(info);
+            console.log(result)
+        }
     }
 
   return (
