@@ -1,7 +1,8 @@
 .myNav{
-    width: 300px;
+    width: 20%;
     margin: 20px;
 }
 .contains{
-    margin: 20px;
+    width: 80%;
+    margin-top: 50px;
 }

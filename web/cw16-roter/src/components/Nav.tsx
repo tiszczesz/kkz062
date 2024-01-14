@@ -6,7 +6,7 @@ type Props = {};
 const Nav = (props: Props) => {
   return (
     <div>
-      <h3> Menu </h3>
+      <h3> Wybierz ćwiczenie </h3>
       <Link className="btn btn-info w-100 m-1" 
       to="/">
         App
@@ -15,6 +15,11 @@ const Nav = (props: Props) => {
       <Link className="btn btn-info w-100 m-1"
        to="/ex1">
         ćwiczenie 1
+      </Link>
+      <br />
+      <Link className="btn btn-info w-100 m-1"
+       to="/ex2">
+        ćwiczenie 2
       </Link>
       <br />
     </div>
