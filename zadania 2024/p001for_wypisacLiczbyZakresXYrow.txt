@@ -1,0 +1,27 @@
+Napisać program, ktory wypisze w kolejności rosnącej na standardowe urządzenie wyjścia (monitor) liczby całkowite z podanego przedziału otwartego (a,b). 
+Ograniczenie dolne i górne nalezy pobrać ze standardowego wejścia (klawiatura). Liczby należy wypisać w oddzielnych wierszach. 
+Dla a=2 i b=9 należy wypisać: 
+               3
+               4
+               5
+               6
+               7
+               8
+
+Wejscie
+2 9
+
+Wyjście
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+
+Uwagi
+1) Treść zadania wkleić w komentarzu na początku pliku z programem
+2) Plik z programem należy zapisać z rozszerzeniem charakterystycznym do użytego języka programowania
+3) Nazwa pliku powinna zawierać imię, nazwisko oraz klasę i nie może się powtarzać np: zad1AnnaKot3c.cpp, zad2AnnaKot3c.py, itp.
+4) Program można napisać w dowolnym języku
+5) Przedział domknięty [a,b] zawiera liczby a i b. Przedział otwarty (a, b) nie zawiera liczb a i b
