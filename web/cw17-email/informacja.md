@@ -8,3 +8,6 @@ Z otrzymanego wyniku bierze się ostatnią cyfrę i odejmuje się od liczby 10. 
 
 ### Sprawdzenie płci
 U kobiety ostatnia cyfra tej liczby jest parzysta (0, 2, 4, 6, 8), a u mężczyzny - nieparzysta (1, 3, 5, 7, 9), K – to cyfra kontrolna. Przykład: PESEL 810203PPP6K należy do kobiety, która urodziła się 3 lutego 1981 roku, a PESEL 761115PPP3K - do mężczyzny, który urodził się 15 listopada 1976 roku.
+
+
+https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/forms_and_events/

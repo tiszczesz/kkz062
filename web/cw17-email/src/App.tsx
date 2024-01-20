@@ -4,6 +4,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Exercise1 from './components/Exercise1';
 import Exercise2 from './components/Exercise2';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       </div>
       <div style={{margin:'30px'}} className='w-100'>
         <Routes>
-          <Route path='/' element={<Exercise1 />}/>
-          <Route path='/cw1' element={<Exercise2/>}/>
+          <Route path='/' element={<Home />}/>
+          <Route path='/cw1' element={<Exercise1 />}/>
+          <Route path='/cw2' element={<Exercise2/>}/>
         </Routes>
       </div>
     </div>

@@ -1,10 +1,14 @@
 import React from 'react'
+import PeselChecker from './PeselChecker'
 
 type Props = {}
 
 const Exercise2 = (props: Props) => {
   return (
-    <div>Exercise2</div>
+    <div>
+      <h3>Poprawność PESEL</h3>
+      <PeselChecker />
+      </div>
   )
 }
 

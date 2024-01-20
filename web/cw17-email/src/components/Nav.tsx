@@ -9,7 +9,7 @@ const Nav = (props: Props) => {
         <h2>Wybór ćwiczeń</h2>
         <Link className='btn btn-light w-100 m-1' to='/'>Główna</Link><br />
         <Link className='btn btn-light w-100 m-1' to='/cw1'>Ćwiczenie email</Link><br />
-        {/* <Link className='btn btn-light w-100 m-1' to='/'>Ćwiczenie 2</Link><br /> */}
+        <Link className='btn btn-light w-100 m-1' to='/cw2'>Ćwiczenie 2 PESEL</Link><br />
     </div>
   )
 }
