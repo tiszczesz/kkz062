@@ -1,0 +1,18 @@
+Napisać program, ktory obliczy sumę dwóch liczb X i Y. 
+Liczbę X i Y należy pobrać ze standardowego wejścia (klawiatura). 
+
+Dla X = 9 i Y = 7 należy wypisać:
+9+7=16
+
+Wejście
+4 7
+
+Wyjście            
+4+7=11
+
+Uwagi
+1) Treść zadania wkleić w komentarzu na początku pliku z programem
+2) Plik z programem należy zapisać z rozszerzeniem charakterystycznym do użytego języka programowania
+3) Nazwa pliku powinna zawierać imię, nazwisko oraz klasę i nie może się powtarzać np: zad1AnnaKot3c.cpp, zad2AnnaKot3c.py, itp.
+4) Program można napisać w dowolnym języku.
+5) Przedział domknięty [a,b] zawiera liczby a i b. Przedział otwarty (a, b) nie zawiera liczb a i b;

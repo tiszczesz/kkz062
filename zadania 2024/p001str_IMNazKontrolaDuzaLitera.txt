@@ -1,0 +1,24 @@
+Napisać program, ktory sprawdza czy podane imię i nazwisko zaczyna się od dużej litery. 
+Imię i nazwisko nalezy pobrać jako jeden tekst ze standardowego wejścia (klawiatura). 
+Wypisać jeden z możliwych komunikatów (dla osoby: Anna Kot):
+Imię i nazwisko zaczyna się od duzej litery.
+lub
+Uwaga! "anna kot" napisane jest małą literą.
+lub
+Uwaga! Imię "anna" napisane jest mała literą
+lub
+Uwaga! Nazwisko "kot" napisane jest mała literą
+
+
+Wejście
+Anna kot
+
+Wyjście            
+Uwaga! Nazwisko "kot" napisane jest mała literą 
+
+Uwagi
+1) Treść zadania wkleić w komentarzu na początku pliku z programem
+2) Plik z programem należy zapisać z rozszerzeniem charakterystycznym do użytego języka programowania
+3) Nazwa pliku powinna zawierać imię, nazwisko oraz klasę i nie może się powtarzać np: zad1AnnaKot3c.cpp, zad2AnnaKot3c.py, itp.
+4) Program można napisać w dowolnym języku.
+5) Przedział domknięty [a,b] zawiera liczby a i b. Przedział otwarty (a, b) nie zawiera liczb a i b;

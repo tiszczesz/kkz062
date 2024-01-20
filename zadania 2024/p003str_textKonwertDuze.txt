@@ -1,0 +1,16 @@
+Napisać program, ktory we wprowadzonym tekście konwertuje wszystkie małe litery na duże (pozostałe znaki pozostawia bez zmian).
+Zakładamy, że w tekście mogą wystepować spacje. Konwertowane są tylko znaki angielskie (znaki narodowe nie są konwertowane).
+Tekst należy pobrać jako jeden tekst ze standardowego wejścia (klawiatura). 
+
+Wejście
+Coś do konwersji
+
+Wyjście            
+COś DO KONWERSJI
+
+Uwagi
+1) Treść zadania wkleić w komentarzu na początku pliku z programem
+2) Plik z programem należy zapisać z rozszerzeniem charakterystycznym do użytego języka programowania
+3) Nazwa pliku powinna zawierać imię, nazwisko oraz klasę i nie może się powtarzać np: zad1AnnaKot3c.cpp, zad2AnnaKot3c.py, itp.
+4) Program można napisać w dowolnym języku.
+5) Przedział domknięty [a,b] zawiera liczby a i b. Przedział otwarty (a, b) nie zawiera liczb a i b;

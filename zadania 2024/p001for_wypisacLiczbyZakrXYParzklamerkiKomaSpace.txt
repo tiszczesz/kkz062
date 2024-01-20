@@ -1,0 +1,17 @@
+Napisać program, ktory wypisze w kolejności rosnacej na standardowe urządzenie wyjścia (monitor) liczby całkowite parzyste z podanego przedziału otwartego (a,b). 
+Kolejne liczby należy wypisać w jednym wierszu w nawiasie klamrowym oddzielając przecinkiem i spacją. Ograniczenie dolne i górne nalezy pobrać ze standardowego wejścia (klawiatura). 
+Dla a = 9 i b =31 należy wypisać:
+		{10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30}
+
+Wejście
+9 31
+
+Wyjście
+{10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30}
+
+Uwagi
+1) Treść zadania wkleić w komentarzu na początku pliku z programem
+2) Plik z programem należy zapisać z rozszerzeniem charakterystycznym do użytego języka programowania
+3) Nazwa pliku powinna zawierać imię, nazwisko oraz klasę i nie może się powtarzać np: zad1AnnaKot3c.cpp, zad2AnnaKot3c.py, itp.
+4) Program można napisać w dowolnym języku
+5) Przedział domknięty [a,b] zawiera liczby a i b. Przedział otwarty (a, b) nie zawiera liczb a i b
