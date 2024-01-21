@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Header from './components/layout/Header/Header';
 import BookList from './components/features/BookList/BookList';
 import Sidebar from './components/layout/Sidebar/Sidebar';
+import { bookData } from './Data/RepoBooks';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Row>
           <Col xs="12" md="9">
             <main className='mt-2 mb-2'>
-              <BookList />
+              <BookList books={bookData} />
             </main>
             
           </Col>
