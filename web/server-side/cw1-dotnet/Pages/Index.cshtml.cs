@@ -8,7 +8,7 @@ namespace MyApp.Namespace
     public class IndexModel : PageModel
     {
         private ProductRepo _repo;
-        
+
         [BindProperty]
         public List<Product> Products { get; set; }
         public IndexModel(IConfiguration configuration)
@@ -19,5 +19,6 @@ namespace MyApp.Namespace
         {
             Products = _repo.GetAll();
         }
+        
     }
 }

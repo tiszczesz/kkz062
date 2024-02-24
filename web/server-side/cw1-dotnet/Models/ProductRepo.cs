@@ -29,4 +29,15 @@ public class ProductRepo
         return products;
     }
 
+    public void DeleteProduct(int? id)
+    {
+        if(id==null) return;
+        SqliteConnection connection = new SqliteConnection(_connString);
+        SqliteCommand command = connection.CreateCommand();
+        command.CommandText = $"DELETE FROM products WHERE id = {id}";
+        connection.Open();
+        command.ExecuteNonQuery();
+        connection.Close();
+        return;
+    }
 }

@@ -25,15 +25,21 @@
                     <th>Nazwa</th>
                     <th>Cena</th>
                     <th>Data</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
-                @foreach(var p in Model.Products){
+                @foreach (var p in Model.Products)
+                {
                     <tr>
                         <td>@p.Id</td>
                         <td>@p.Name</td>
                         <td>@p.Price</td>
                         <td>@p.Date?.ToShortDateString()</td>
+                        <td>
+                            <a class="btn btn-warning" asp-page="Delete" 
+                            asp-route-id="@p.Id">Usuń</a>
+                        </td>
                     </tr>
                 }
             </tbody>
