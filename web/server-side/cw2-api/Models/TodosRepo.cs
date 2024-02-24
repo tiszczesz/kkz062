@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Common;
 
 namespace cw2_api;
 
@@ -44,5 +45,23 @@ public class TodosRepo
         connection.Open();
         command.ExecuteNonQuery();
         connection.Close();
+    }
+
+    public int DeleteTodo(int? id)
+    {
+        if(id==null) return 0;
+        MySqlConnection connection = new MySqlConnection(_connString);
+        string sql = $"DELETE FROM todos WHERE id={id}";
+        MySqlCommand command = connection.CreateCommand();
+        command.CommandText = sql;
+        connection.Open();
+        var result = command.ExecuteNonQuery();
+        connection.Close();
+        return result;
+    }
+
+    public object GetById(int? id)
+    {
+        throw new NotImplementedException();
     }
 }
