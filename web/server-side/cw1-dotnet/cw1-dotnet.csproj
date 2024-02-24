@@ -14,5 +14,9 @@
   <ItemGroup>
     <Folder Include="wwwroot\media\" />
   </ItemGroup>
+ 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.2" />
+  </ItemGroup>
 
 </Project>
