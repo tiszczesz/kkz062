@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.Sqlite;
+﻿using System.Globalization;
+using Microsoft.Data.Sqlite;
 
 namespace cw1_dotnet;
 
@@ -39,5 +40,19 @@ public class ProductRepo
         command.ExecuteNonQuery();
         connection.Close();
         return;
+    }
+
+    public void AddNewProduct(Product newProduct)
+    {
+        string? price = newProduct.Date?.ToString("yyyy-MM-dd");
+        SqliteConnection connection = new SqliteConnection(_connString);
+        SqliteCommand command = connection.CreateCommand();
+        command.CommandText = $"INSERT INTO products(name,price,date) "
+        +$" VALUES('{newProduct.Name}', "+
+        $"'{newProduct.Price?.ToString(CultureInfo.InvariantCulture)}', "+
+        $"'{price}')";
+        connection.Open();
+        command.ExecuteNonQuery();
+        connection.Close();
     }
 }
