@@ -1,11 +1,29 @@
+using System.Drawing;
 using cw2_api;
 
 var builder = WebApplication.CreateBuilder(args);
+var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy  =>
+                      {
+                          policy.WithOrigins("http://localhost",
+                                              "http://www.contoso.com");
+                      });
+});
+
+var colors = new List<string>{"red","green","blue","yellow"};
+
 string? connString = builder.Configuration
    .GetConnectionString("mysqlConn");
 TodosRepo repo = new TodosRepo(connString);
 var app = builder.Build();
-
+app.UseCors(MyAllowSpecificOrigins);
+app.MapGet("/api/colors",()=>{
+    return colors;
+});
 app.MapGet("/", () => "Hello World!");
 app.MapGet("/api/todos", () =>
 {
