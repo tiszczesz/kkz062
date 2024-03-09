@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Todo, fakeGetTodos } from "../../services/TodoService"
+import { Todo, fakeGetTodos, getTodos } from "../../services/TodoService"
 import TodoComponent from "../TodoComponent/TodoComonent"
 
 type TodoListProps = {
@@ -17,7 +17,8 @@ const TodoList = (props: TodoListProps) => {
         // }
         // Moja();
         (async function () {
-            const apiTodos: Todo[] = await fakeGetTodos()
+           // const apiTodos: Todo[] = await fakeGetTodos()
+            const apiTodos: Todo[] = await getTodos()
             
             setTodos(apiTodos)
             console.log(apiTodos);
