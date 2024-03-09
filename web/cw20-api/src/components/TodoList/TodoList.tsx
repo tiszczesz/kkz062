@@ -18,15 +18,17 @@ const TodoList = (props: TodoListProps) => {
         // Moja();
         (async function () {
             const apiTodos: Todo[] = await fakeGetTodos()
-            console.log(apiTodos);
+            
             setTodos(apiTodos)
+            console.log(apiTodos);
+            
         })();
 
     }, [])
     return (
         <div className="d-flex p-2">
             {todos.map((item) => (
-                <TodoComponent todo={item} deleteHandler={deleteTodo} />
+                <TodoComponent key={item.id} todo={item} deleteHandler={deleteTodo} />
             )
             )}
         </div>
