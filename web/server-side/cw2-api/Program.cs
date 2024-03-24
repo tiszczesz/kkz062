@@ -16,8 +16,8 @@ builder.Services.AddCors(options =>
 
 var colors = new List<string>{"red","green","blue","yellow"};
 
-string? connString = builder.Configuration
-   .GetConnectionString("mysqlConn");
+string? connString = builder.Configuration 
+   .GetConnectionString("mysqlConn") ?? "Server=localhost;Database=kkz062_todos;User=root;";
 TodosRepo repo = new TodosRepo(connString);
 var app = builder.Build();
 app.UseCors(MyAllowSpecificOrigins);
