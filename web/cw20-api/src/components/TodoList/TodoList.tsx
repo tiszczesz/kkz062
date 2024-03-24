@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import { Todo, deleteTodoApi, fakeGetTodos, getTodos } from "../../services/TodoService"
+import { FormEvent, useEffect, useState } from "react"
+import { Todo, deleteTodoApi, fakeGetTodos, getTodos, insertTodo } from "../../services/TodoService"
 import TodoComponent from "../TodoComponent/TodoComonent"
 
 type TodoListProps = {
@@ -8,6 +8,9 @@ type TodoListProps = {
 
 const TodoList = (props: TodoListProps) => {
     const [todos, setTodos] = useState<Todo[]>([])
+    const [name, setName] = useState("");
+    const [description, setDescription] = useState("");
+    const [isComplete, setIsComplete] = useState(false);
     const deleteTodo = (id: number) => {
         deleteTodoApi(id)
         setTodos(prevTodos => prevTodos.filter((todo) => todo.id != id))
@@ -27,17 +30,35 @@ const TodoList = (props: TodoListProps) => {
         })();
 
     }, [])
+    function handelSubmit(event: FormEvent<HTMLFormElement>): void {
+        event.preventDefault();
+        insertTodo({
+            id: -1,
+            name: name,
+            isComplete: isComplete,
+            description: description
+        })
+    }
+
     return (
         <>
-        <div className="d-flex p-2">
-            {todos.map((item) => (
-                <TodoComponent key={item.id} todo={item} deleteHandler={deleteTodo} />
-            )
-            )}
-        </div>
-        <div>
-                <form >tu formularz</form>
-        </div>
+            <div className="d-flex p-2">
+                {todos.map((item) => (
+                    <TodoComponent key={item.id} todo={item} deleteHandler={deleteTodo} />
+                )
+                )}
+            </div>
+            <div>
+                <form onSubmit={handelSubmit} >
+                    <input type="text" placeholder="podaj nazwę"
+                        onBlur={(event) => setName(event.target.value)} /><br />
+                    <input type="text" placeholder="podaj opis"
+                        onBlur={(event) => setDescription(event.target.value)} /><br />
+                    <input type="checkbox"
+                        onChange={(event) => setIsComplete(event.target.checked)} /><br />
+                    <input type="submit" value="Zapisz" />
+                </form>
+            </div>
         </>
     )
 }
