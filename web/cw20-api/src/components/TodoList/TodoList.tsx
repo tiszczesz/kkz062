@@ -32,12 +32,14 @@ const TodoList = (props: TodoListProps) => {
     }, [])
     function handelSubmit(event: FormEvent<HTMLFormElement>): void {
         event.preventDefault();
-        insertTodo({
+        const todo:Todo = {
             id: -1,
             name: name,
             isComplete: isComplete,
             description: description
-        })
+        }
+        setTodos([...todos,todo]);
+        insertTodo(todo);
     }
 
     return (
