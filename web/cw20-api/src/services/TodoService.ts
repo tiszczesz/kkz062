@@ -10,6 +10,12 @@ export const  getTodos= async () => {
         .then((rej)=>rej.json());
     return await result;
 }
+
+export const deleteTodo = async (id:number) =>{
+    const result = await fetch(`http://localhost:5200/api/todos/${id}`
+         ,{method:"DELETE"}).then(rej=>rej.json());
+}
+
 export const fakeGetTodos = async ()=>{
     return await [
         {id:1,name:"Pierwsza czynność",
