@@ -1,0 +1,41 @@
+﻿@page
+@model MyApp.Namespace.AddProductModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Nowy produkt</h2>
+        <form method="post">
+            <div class="row m-2">
+                <label asp-for="@Model.NewProduct.Name"></label>
+                <input asp-for="@Model.NewProduct.Name" />
+                <span asp-validation-for="@Model.NewProduct.Name"></span>
+            </div>
+            <div class="row m-2">
+                <label asp-for="@Model.NewProduct.Price"></label>
+                <input type="number" asp-for="@Model.NewProduct.Price" step="0.01" />
+                <span asp-validation-for="@Model.NewProduct.Price"></span>
+            </div>
+            <div class="row m-2">
+                <label asp-for="@Model.NewProduct.Date"></label>
+                <input type="date" asp-for="@Model.NewProduct.Date" />
+                <span asp-validation-for="@Model.NewProduct.Date"></span>
+            </div>
+            <div class="row m-2">
+                <input type="submit" value="Zapisz">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
+

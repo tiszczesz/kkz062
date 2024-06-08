@@ -1,0 +1,57 @@
+﻿@page
+@model MyApp.Namespace.IndexModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Strona Index</h1>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sed quos aut! Eligendi sit omnis
+            deserunt, officia veniam asperiores iure? Molestias, minus architecto nesciunt placeat veniam nostrum
+            numquam ipsam ipsa.</div>
+        Dzisiejsza data: @DateTime.Now
+        <h3>Zbiór produków ilość: @Model.Products.Count</h3>
+        <div>
+            <a asp-page="AddProduct">Dodaj nowy produkt</a>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nazwa</th>
+                    <th>Cena</th>
+                    <th>Data</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model.Products)
+                {
+                    <tr>
+                        <td>@p.Id</td>
+                        <td>@p.Name</td>
+                        <td>@p.Price</td>
+                        <td>@p.Date?.ToShortDateString()</td>
+                        <td>
+                            <a class="btn btn-warning" asp-page="Delete" 
+                            asp-route-id="@p.Id">Usuń</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div>
+            <a asp-page="Page1">Do strony Page1</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
